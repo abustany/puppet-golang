@@ -1,0 +1,9 @@
+Simple puppet module to install the Go toolchain (or several versions of it)
+
+See manifests/init.pp for the list of parameters you can pass to the resource.
+
+So far, the only installation method supported is downloading a tarball from an
+HTTP mirror (by default the official one on googlecode.com). Adding more
+methods (eg. from the official PPA for Ubuntu) should be fairly easy.
+The downloading of the tarball is done using curl, so you'll need curl installed
+for this module to work.
